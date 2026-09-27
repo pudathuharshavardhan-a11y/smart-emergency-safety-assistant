@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Emergency Safety Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚨 Smart Emergency Safety Assistant</h1>
+        <p>Stay Calm. Stay Safe. Get Help.</p>
+    </header>
+
+    <main>
+
+        <!-- SOS SECTION -->
+        <section class="sos-section">
+
+            <h2>Emergency Assistance</h2>
+
+            <p>
+                If you are facing an emergency, use the SOS button
+                to access emergency assistance.
+            </p>
+
+            <button class="sos-button" onclick="activateSOS()">
+                🆘 SOS
+            </button>
+
+        </section>
+
+
+        <!-- EMERGENCY TYPES -->
+
+        <section>
+
+            <h2>What is happening?</h2>
+
+            <div class="emergency-container">
+
+                <button onclick="showEmergency('fire')">
+                    🔥<br>
+                    Fire
+                </button>
+
+                <button onclick="showEmergency('accident')">
+                    🚗<br>
+                    Accident
+                </button>
+
+                <button onclick="showEmergency('medical')">
+                    🏥<br>
+                    Medical
+                </button>
+
+                <button onclick="showEmergency('flood')">
+                    🌊<br>
+                    Flood
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GUIDANCE -->
+
+        <section class="guidance">
+
+            <h2>🛡️ Safety Guidance</h2>
+
+            <div id="guidanceText">
+
+                <p>
+                    Select an emergency type above to receive
+                    basic safety guidance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER SERVICES -->
+
+        <section>
+
+            <h2>Emergency Services</h2>
+
+            <div class="services">
+
+                <button onclick="showLocation()">
+                    📍 My Location
+                </button>
+
+                <button onclick="showContacts()">
+                    👤 Trusted Contacts
+                </button>
+
+                <button onclick="showAssistant()">
+                    🤖 Safety Assistant
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Smart Emergency Safety Assistant
+        </p>
+
+        <p>
+            Built for emergency awareness and safety assistance.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
